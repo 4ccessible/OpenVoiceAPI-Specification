@@ -1,0 +1,41 @@
+id: v1.0
+type: object
+properties:
+  version:
+    type: string
+    enum:
+      - v1.0.0
+
+definitions:
+  Partner:
+    type: object
+    properties:
+      domain:
+        type: string # https://pizzaccessible.com
+      name:
+        type: string # Pizza Accessible
+      supportEmail:
+        type: string # support@pizzaccessible.com
+      phone:
+        type: string # +1 713 111 2222
+      address:
+        type: string # 1234 Main St.
+      city:
+        type: string # Houston
+      state:
+        type: string # Texas
+      zip:
+        type: string # 77003
+      country:
+        type: string # United States
+      logo:
+        type: string # https://pizzaccessible.com/images/logo.png
+    required:
+      - domain
+      - name
+  Step:
+    type: object
+    properties:
+      name:
+        type: string
+      
